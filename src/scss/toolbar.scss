@@ -1,0 +1,19 @@
+@import "variables.scss";
+@import "mixin.scss";
+
+.exel__toolbar
+{
+    display: flex;
+    height: 38px;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+    border-top: 1px solid lightgray;
+    padding-left: 30px;
+
+    .button 
+    {
+        margin: 0 7px;
+
+        @include button(blue)
+    }
+}

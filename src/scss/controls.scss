@@ -1,0 +1,114 @@
+@import "variables.scss";
+@import "mixin.scss";
+
+
+.controls
+{
+    .title
+    {
+        height: 64px;
+
+        @include centeredFlex
+    }
+
+    .table-create
+    {
+        height: 260px;
+        background: #f2f5ff;
+
+        .row
+        {
+            width: 800px;
+            height: 100%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+
+            .wrapper
+            {
+                width: 184px;
+                height: 164px;
+                flex-direction: column;
+
+                @include centeredFlex;
+
+                .box
+                {
+                    width: 164px;
+                    height: 124px;
+                    margin-bottom: 10px;
+                    border: 1px solid silver;
+                    border-radius: 4px;
+
+                    &:hover
+                    {
+                        border-color: #2abd3c;
+                        color: #2abd3c;
+                    }
+
+                    @include centeredFlex;
+
+                    i
+                    {
+                        font-size: 6rem;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .table-list
+    {
+        width: 800px;
+        height: 100%;
+        margin: 30px auto 0;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+
+        .titles
+        {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 10px;
+            margin-bottom: 20px;
+        }
+        .items
+        {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+
+            .item
+            {
+                display: flex;
+                justify-content: space-between;
+                align-items: center ;
+                padding: 10px;
+                border-radius: 20px;
+                margin-bottom: 15px;
+
+                &:hover
+                {
+                    background: #cef3ce;
+                }
+
+                .name
+                {
+                    @include centeredFlex;
+
+                    i
+                    {
+                        margin-right:10px;
+                        color: #2abd3c;
+                    }
+                }
+            }
+        }
+    }
+}

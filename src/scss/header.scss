@@ -1,0 +1,50 @@
+@import "variables.scss";
+@import "mixin.scss";
+
+
+.exel__header
+{
+    display: flex;
+    justify-content: space-between;  
+    height: 62px;
+    align-items: center;    
+    
+    .title
+    {
+        i
+        {
+            color: green;
+        }
+    }
+
+    .title,
+    .general-btns
+    {
+        display: flex;
+        align-items: center;
+
+        > input,
+        > div
+        {
+            margin: 0 5px;
+        }
+
+        .button 
+        {
+            @include button(red)
+        }
+
+        input
+        {
+            border:1px solid silver;
+            border-radius: 2px;
+            padding: 5px;
+            outline: none;
+
+            &:hover
+            {
+                border: 1px solid gray;
+            }
+        }
+    }
+}

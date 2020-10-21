@@ -1,0 +1,36 @@
+@mixin button($color: green) 
+{
+    width: 24px;
+    height: 24px;    
+    background: rgba(0,0,0,0.05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover
+    {
+        background: rgba(0,0,0,0.2);
+    }
+
+    i 
+    {
+        color: gray;
+        font-size: 18px;
+
+        &:hover
+        {
+            cursor: pointer;
+        }
+
+        &:active
+        {
+            color: $color;
+        }
+    }
+}
+
+@mixin centeredFlex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

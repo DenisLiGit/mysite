@@ -1,0 +1,25 @@
+@import "~normalize.css";
+@import "variables.scss";
+@import "mixin.scss";
+
+
+@import "./formula";
+@import "./header";
+@import "./toolbar";
+@import "./spreadsheet";
+@import "./controls";
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui;
+}
+
+body
+{
+    font-size: 16px;
+    color: #888;
+    max-width: 100%;
+}

@@ -1,0 +1,79 @@
+@import "variables.scss";
+@import "mixin.scss";
+
+
+.exel__spreadsheet
+{
+    position: relative;
+    overflow-x: scroll;
+    width: 100%;
+    height: 100%;
+
+    .titles
+    {
+        display: flex;
+        flex-direction: row;
+        
+        .corner
+        {
+            width: 53px;
+            height: 24px;
+            background: silver;
+        }
+
+        .row
+        {
+            display: flex;
+            flex-direction: row;
+
+            .column
+            {
+                width: 100px;
+                border-right: 1px solid lightgray;
+                border-bottom: 1px solid lightgray;
+                background: #ececec;
+
+                @include centeredFlex;                
+            }
+        }
+    }
+
+    .rows
+    {
+        display: flex;
+        flex-direction: row;
+        height: 24px;
+
+        .counter
+        {
+            background: #ececec;
+            width: 53px;
+            border-right: 1px solid lightgray;
+            border-bottom: 1px solid lightgray;
+
+            @include centeredFlex;
+        }
+
+        .row
+        {
+            display: flex;
+            flex-direction: row;
+
+            .cell
+            {
+                width: 100px;
+                border-right: 1px solid lightgray;
+                border-bottom: 1px solid lightgray;          
+                outline: none;  
+                overflow: hidden;
+    
+                @include centeredFlex; 
+
+                &.selected
+                {
+                    border: 2px solid #58a1ec;
+                }
+            }
+        }
+    }
+}
